@@ -135,7 +135,12 @@
             $(".loader-wrapper").fadeOut("slow");
         });
 
-        if (document.documentElement.clientWidth<992) countJob();
+        if (document.documentElement.clientWidth<992) {
+            countJob();
+            document.getElementById('pb1').style.backgroundColor = "#70a2ff8a";
+            document.getElementById('pb2').style.backgroundColor = "#7bed9f";
+            document.getElementById('pb3').style.backgroundColor = "#eccc68";
+        }
     </script>
 </body>
 </html>
